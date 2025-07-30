@@ -1,0 +1,11 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp widget.html public/
+    - cp index.js public/
+  artifacts:
+    paths:
+      - public
+  only:
+    - master  # ou "master", selon votre branche
